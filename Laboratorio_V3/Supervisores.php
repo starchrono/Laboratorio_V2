@@ -45,35 +45,35 @@
 </body>
 </html>
 
-<?php
+// <?php
 
-<!-- //Invocamos la cadena de conexión que se encuentra en el archivo conexion.php
-require ("Conexion.php");
-
-
-
-//Recibimos los parametros enviados mediante POST por el Formulario
-
-
-$TecnicoID = $_POST["TecnicoID"];
-
-
-//Invocamos el procedimiento almacenado, incluyendo los valores
-$insertar = mysqli_query($enlace,"call NuevoSuper('TecnicoID')");
+// //Invocamos la cadena de conexión que se encuentra en el archivo conexion.php
+// require ("Conexion.php");
 
 
 
-if (!$insertar){echo "Fallo" ;}
-
-//else{echo "Guardado con exito";}
-
-else{ echo "<script language='JavaScript'>
-                alert('Se inserto correctamente :D');
-                </script>";}
+// //Recibimos los parametros enviados mediante POST por el Formulario
 
 
+// $TecnicoID = $_POST["TecnicoID"];
 
-mysqli_close($enlace);
+
+// //Invocamos el procedimiento almacenado, incluyendo los valores
+// $insertar = mysqli_query($enlace,"call NuevoSuper('TecnicoID')");
 
 
-?> -->
+
+// if (!$insertar){echo "Fallo" ;}
+
+// //else{echo "Guardado con exito";}
+
+// else{ echo "<script language='JavaScript'>
+//                 alert('Se inserto correctamente :D');
+//                 </script>";}
+
+
+
+// mysqli_close($enlace);
+
+
+// ?>

@@ -50,35 +50,35 @@
 </html>
 
 
-<!-- <?php
+//<?php
 
-//Invocamos la cadena de conexión que se encuentra en el archivo conexion.php
-require ("Conexion.php");
-
-
-
-//Recibimos los parametros enviados mediante POST por el Formulario
-
-
-$Nombre = $_POST["NombreTec"];
-$DepartamentoID = $_POST["Dep"];
-
-//Invocamos el procedimiento almacenado, incluyendo los valores
-$insertar = mysqli_query($enlace,"call NuevoTec('$Nombre','$DepartamentoID')");
+// //Invocamos la cadena de conexión que se encuentra en el archivo conexion.php
+// require ("Conexion.php");
 
 
 
-if (!$insertar){echo "Fallo" ;}
-
-//else{echo "Guardado con exito";}
-
-else{ echo "<script language='JavaScript'>
-                alert('Se inserto correctamente :D');
-                </script>";}
+// //Recibimos los parametros enviados mediante POST por el Formulario
 
 
+//$Nombre = $_POST["NombreTec"];
+//$DepartamentoID = $_POST["Dep"];
 
-mysqli_close($enlace);
+// //Invocamos el procedimiento almacenado, incluyendo los valores
+//$insertar = mysqli_query($enlace,"call NuevoTec('$Nombre','$DepartamentoID')");
 
 
-?> -->
+
+//if (!$insertar){echo "Fallo" ;}
+
+// //else{echo "Guardado con exito";}
+
+//else{ echo "<script language='JavaScript'>
+//                alert('Se inserto correctamente :D');
+//                </script>";}
+
+
+
+//mysqli_close($enlace);
+
+
+//?>
