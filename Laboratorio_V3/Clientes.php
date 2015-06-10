@@ -3,7 +3,7 @@
 <head>
     <title>Clientes</title>
     <meta charset="utf-8">
-    <link type="text/css" href="style3.css" rel="stylesheet" />
+    <link type="text/css" href="style2.css" rel="stylesheet" />
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Philosopher:700italic' rel='stylesheet' type='text/css'>
 </head>
@@ -44,35 +44,27 @@
 </body> 
 </html>
 
-<?php
+//<?php
 
-//Invocamos la cadena de conexión que se encuentra en el archivo conexion.php
-require ("Conexion.php");
+// //Invocamos la cadena de conexión que se encuentra en el archivo conexion.php
+//require ("Conexion.php");
 
+// //Recibimos los parametros enviados mediante POST por el Formulario
 
+//$Nombre = $_POST["ClienteNombre"];
+//$Correo = $_POST["Correo"];
 
-//Recibimos los parametros enviados mediante POST por el Formulario
+// //Invocamos el procedimiento almacenado, incluyendo los valores
+//$insertar = mysqli_query($enlace,"call NuevoCliente('$Nombre','$Correo')");
 
-
-$Nombre = $_POST["ClienteNombre"];
-$Correo = $_POST["Correo"];
-
-//Invocamos el procedimiento almacenado, incluyendo los valores
-$insertar = mysqli_query($enlace,"call NuevoCliente('$Nombre','$Correo')");
-
-
-
-if (!$insertar){echo "Fallo" ;}
+//if (!$insertar){echo "Fallo" ;}
 
 //else{echo "Guardado con exito";}
 
-else{ echo "<script language='JavaScript'>
-                alert('Se inserto correctamente :D');
-                </script>";}
+//else{ echo "<script language='JavaScript'>
+//                alert('Se inserto correctamente :D');
+//               </script>";}
 
+//mysqli_close($enlace);
 
-
-mysqli_close($enlace);
-
-
-?>
+//?>
