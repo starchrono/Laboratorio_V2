@@ -3,54 +3,54 @@
 <head>
     <title>Tecnicos</title>
     <meta charset="utf-8">
-    <link type="text/css" href="style3.css" rel="stylesheet" />
+    <link type="text/css" href="style2.css" rel="stylesheet" />
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Philosopher:700italic' rel='stylesheet' type='text/css'>
 </head>
- 
+
 <body>
     <div id="envoltura">
-        <div id="contenedor"> 
+        <div id="contenedor">
             <div id="cabecera">
                 <img src="images/logo.png" height="180" >
-            </div> 
+            </div>
             <div id="cuerpo">
 				<table>
 					<tr>
 						<td class="first">
                 <form id="form-login" action="#" method="post" autocomplete="off">
 
-                   
+
 
                     <p1><label for="Nombre">Nombre:</label></p1>
                         <input name="NombreTec" type="text" id="NombreTec" class="NombreTec" placeholder="" autofocus="" required=""></p>
 
-                   
+
                     <p1><label for="Departamento">Departamento:</label></p1>
                         <input name="Dep" type="Dep" id="Dep" class="Dep" placeholder=""autofocus="" required=""></p>
- 
-                    
+
+
 						</td>
 						<td class="second">
-                    	
-					
-					
+
+
+
 				</table>
 
 
-                    <p id="bot2"><input name="submit" type="submit" id="boton" value="Guardar" class="boton2"/></p>
+                    <p id="bot2"><input name="submit" type="submit" id="boton" value="Guardar" class="boton"/></p>
 
                 </form>
             </div>
- 
+
             <div id="pie">LABORATORIOS TOX</div>
-        </div> 
+        </div>
     </div>
-</body> 
+</body>
 </html>
 
 
-<?php
+<!-- <?php
 
 //Invocamos la cadena de conexión que se encuentra en el archivo conexion.php
 require ("Conexion.php");
@@ -81,4 +81,4 @@ else{ echo "<script language='JavaScript'>
 mysqli_close($enlace);
 
 
-?>
+?> -->
