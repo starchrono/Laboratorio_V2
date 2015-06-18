@@ -1,0 +1,151 @@
+html{
+	background: url(images/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-image: -moz-radial-gradient(center, #042045, #000017);
+	background-image: -ms-radial-gradient(center, #042045, #000017);
+	background-image: -o-radial-gradient(center, #042045, #000017);
+	background-image: -webkit-gradient(rdial, center center, center bottom, from(#042045), to(#000017));
+	background-image: -webkit-rdial-gradient(top, #042045, #000017);
+	background-image: radial-gradient(center, #042045, #000017);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#042045', endColorstr = '#000017');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#042045', endColorstr = '#000017')";
+}
+	
+body{
+    font-family: 'Philosopher', sans-serif;
+    font-size:12px;
+    margin:0;
+}
+
+#envoltura{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-165px;
+    margin-top: -180px;
+    width: 330px;
+ 
+}
+ 
+#contenedor{
+    background-color:#D7D7D7;
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,.8);
+    border-radius:5px;
+}
+ 
+#cabecera{
+    border-bottom: 5px solid #D7D7D7;
+    padding-top: 5px;
+    height:150px;
+    line-height:50px;
+    text-align:center;
+}
+ 
+#cuerpo{
+    background:#D7D7D7;
+    border:solid #D7D7D7;
+    border-width: 2px 0;
+    padding:15px 35px;
+}
+ 
+label{
+    color: #666;
+    font-weight: bold
+}
+ 
+input{
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,.4);
+    font:bold 12px 'Raleway', sans-serif;
+    height: 24px;
+    line-height: 20px;
+    padding:0 2px;
+    width: 255px;
+	list-style:none;
+	margin-bottom:12px;
+	background:#FFFFFF;
+	color: #042090;
+}
+
+select{
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,.4);
+    font:bold 12px 'Raleway', sans-serif;
+    height: 26px;
+    line-height: 20px;
+    padding:0 2px;
+    width: 260px;
+	list-style:none;
+	margin-bottom:28px;
+	background:#FFFFFF;
+	color: #042090;
+}
+ 
+.boton{
+    font-family: 'Philosopher', sans-serif;
+	float: left;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	width: 35%;
+	font-size: 12px;
+	background:#009EFF;
+	border:2px solid #009EFF;
+	border-radius: 3px;
+}
+ 
+.boton:active{
+    position: relative;
+    top: 3px;
+	background: #fff;
+	color:#009EFF;
+	border:2px solid #009EFF;
+}
+ 
+#pie{
+    font-family: 'Raleway', sans-serif;
+    border-top: 5px solid #D7D7D7;
+    color: #696969;
+    font-size: 11px;
+    height: 50px;
+    line-height: 65px;
+    text-align: center;
+}
+
+h1{
+	font-family: 'Philosopher', sans-serif;
+	color: #666;
+    font-weight: bold;
+	font-size: 20px;
+	text-shadow: 3px 3px 3px #aaa;
+	text-align: center;
+}
+
+form,p{
+    margin:0;
+}
+ 
+p{
+    padding-bottom: 15px;
+}
+
+p1{
+    padding-bottom: 10px;
+}
+ 
+p#bot{
+    padding-top: 10px;
+}
+
+.flotante {
+    display:scroll;
+        position:fixed;
+        bottom:320px;
+        right:30px;
+		top: 565px;
+}

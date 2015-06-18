@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Administrador</title>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Philosopher:700italic' rel='stylesheet' type='text/css'>
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<img style="display:block;margin:0 auto 0 auto;" src="../images/logo.png" height="260">
+				<br><h1>BIENVENIDO ADMINISTRADOR</h1>
+			</header>	
+			<div class="main">
+				<nav id="cbp-hrmenu" class="cbp-hrmenu">
+					<ul>
+						<li>
+							<a href="#">Registros</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner"> 
+									<div>
+										<h4>Supervisores</h4>
+										<ul>
+											<li><a href="../Insert_Supervisores.php">Registrar</a></li>
+											<li><a href="../Update_Supervisores.php">Ver/Modificar</a></li>
+										</ul>
+									</div>
+									<div>
+										<h4>Técnicos</h4>
+										<ul>
+											<li><a href="../Insert_Tecnicos.php">Registrar</a></li>
+											<li><a href="../Update_Tecnicos.php">Ver/Modificar</a></li>
+										</ul>
+									</div>
+									<div>
+										<h4>Cliente</h4>
+										<ul>
+											<li><a href="../Insert_Clientes.php">Registrar</a></li>
+											<li><a href="../Update_Clientes.php">Ver/Modificar</a></li>
+										</ul>
+									</div>
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+						<li>
+							<a href="#">Laboratorio</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner">
+									<div>
+										<h4>Departamentos</h4>
+										<ul>
+											<li><a href="../Insert_Departamentos.php">Nuevo</a></li>
+											<li><a href="../Update_Departamentos.php">Ver/Modificar</a></li>
+										</ul>
+									</div>
+									<div>
+										<h4>Muestras</h4>
+										<ul>
+											<li><a href="../Insert_Muestra.php">Nueva</a></li>
+											<li><a href="../Update_Muestra.php">Ver/Modificar</a></li>
+										</ul>
+									</div>
+									<div>
+										<h4>Resultados</h4>
+										<ul>
+											<li><a href="../Insert_AnalsisRs.php">Captura de Resultados</a></li>
+										</ul>
+									</div>	
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+						<li>
+							<a href="#">Centro Externo</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner"> 
+									<div>
+										<h4>Centros Externos</h4>
+										<ul>
+											<li><a href="../Insert_CE.php">Nuevo</a></li>
+											<li><a href="../Update_CE.php">Ver/Modificar</a></li>
+										</ul>
+									</div>
+									<div>
+										<h4>Muestras</h4>
+										<ul>
+											<li><a href="../Insert_MuestraCE.php">Nueva</a></li>
+											<li><a href="../Insert_MuestraCE.php">Ver/Modificar</a></li>
+										</ul>
+									</div>
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/cbpHorizontalMenu.min.js"></script>
+		<script>
+			$(function() {
+				cbpHorizontalMenu.init();
+			});
+		</script>
+	</body>
+</html>
