@@ -49,7 +49,7 @@
 
     </div>
 
-<a class='flotante' href='../Laboratorio_V3/menu/menu_Adm.html' ><img src='../Laboratorio_V3/images/boton.png' border="0"/></a>
+<a class='flotante' href='../Laboratorio_V4/menu/menu_Adm.html' ><img src='../Laboratorio_V4/images/boton.png' border="0"/></a>
 </body> 
 </html>
 

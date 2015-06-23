@@ -18,23 +18,159 @@
 				<table>
 					<tr>
 						<td class="first">
-                <form id="form-login" action="#" method="post" autocomplete="off">
+                <form id="form-login" action="Insert_Muestra.php" method="post" autocomplete="off">
                     <p1><label for="clienteID">Cliente ID:</label></p1>
-                        <input name="clienteID" type="text" id="clienteID" class="clienteID" placeholder="" autofocus="" required=""></p>
-                    <p1><label for="supervisorID">Supervisor ID:</label></p1>
-                        <input name="supervisorID" type="text" id="supervisorID" class="supervisorID" placeholder="" autofocus="" required=""></p>
+                        
+                      <?php 
+
+error_reporting(E_ALL ^ E_NOTICE);
+
+require ("Conexion.php");
+
+
+
+
+
+
+$SQL = "SELECT ClienteID, Nombre FROM Clientes ORDER BY ClienteID asc";
+
+$QUERY = mysqli_query($enlace, $SQL);
+
+ 
+?>
+                    
+                    <select name="ClienteIDC" id="ClienteIDC">;
+    
+    <option>Seleccione una Opción...</option>
+    
+ <?php
+
+
+     while ( $resultado = mysqli_fetch_array($QUERY)){
+         
+         $ClienteIDR = $resultado[0];
+         $NombreIDR = $resultado[1];
+
+         // echo "<option value='".$resultado['CEIDC']."'></option> ";
+         echo "<option value='".$ClienteIDR."'>  ". $ClienteIDR." ".$NombreIDR."</option> ";
+
+    }
+
+
+?>
+</select>
+                    
+                    <p1><label for="SupervisorID">Supervisor ID:</label></p1>
+                       
+                      <?php 
+
+error_reporting(E_ALL ^ E_NOTICE);
+
+require ("Conexion.php");
+
+
+
+
+
+
+$SQL = "SELECT SupervisorID  FROM Supervisores ORDER BY SupervisorID asc";
+
+//SELECT S.SupervisorID, T.Nombre FROM Supervisores S, Tecnicos T ORDER BY SupervisorID asc
+
+$QUERY = mysqli_query($enlace, $SQL);
+
+ 
+                    
+
+?>
+                    
+                
+                    
+                    <select name="SupervisorIDC" id="SupervisorIDC">;
+    
+    <option>Seleccione una Opción...</option>
+    
+ <?php
+
+
+     while ( $resultado = mysqli_fetch_array($QUERY)){
+         
+         $SupervisorIDR = $resultado[0];
+         $NombreIDR = $resultado[1];
+
+         // echo "<option value='".$resultado['CEIDC']."'></option> ";
+         echo "<option value='".$SupervisorIDR."'>  ". $SupervisorIDR." ".$NombreIDR."</option> ";
+
+    }
+
+
+
+
+
+
+
+
+
+
+?>
+</select>
+                    
                     <p1><label for="fechaR">Fecha de Entrega:</label></p1>
-                        <input name="fechaR" type="text" id="fechaR" class="fechaR" placeholder="AAAA-MM-DD" autofocus="" required=""></p>
+                        <input name="fechaR" type="text" id="FechaR" class="fechaR" placeholder="AAAA-MM-DD" autofocus="" required=""></p>
 						</td>
 
 						<td class="second">
                     <p1><label for="tipo">Tipo:</label></p1>
                         <br>
-                        <input name="tipo" type="text" id="tipo" class="tipo" placeholder="" autofocus="" required=""></p>
+                      
+            
+                
+                    
+                    <select name="TipoIDC" id="TipoIDC">;
+    
+    <option>Seleccione una Opción...</option>
+    <option value="PA">PA</option>
+    <option value="PNA">PNA</option>                    
+    
+
+                        
+</select>
+                            
                     <p1><label for="repet">Repeticion:</label></p1>
-                        <input name="repet" type="text" id="repet" class="repet" placeholder="" autofocus="" required=""></p>
+                       
+                            
+                                            
+                    
+                    <select name="ReéticionIDC" id="RepeticionIDC">;
+    
+    <option>Seleccione una Opción...</option>
+    <option value="Si">Si</option>
+    <option value="No">No</option>                    
+    
+
+                        
+</select>
 					<p1><label for="centro">Centro:</label></p1>
-                        <input name="centro" type="text" id="centro" class="centro" placeholder="" autofocus="" required=""></p>
+                      
+                            
+                <select name="CentroIDC" id="CentroIDC">;
+    
+    <option>Seleccione una Opción...</option>
+    <option value="CI">CI</option>
+    <option value="CE">CE</option>                    
+    
+
+                            <?php
+        echo "<script language='JavaScript'>
+                alert('Se modificó correctamente :D '.$CentroIDC.'');
+                </script>";
+
+?>
+ 
+                    
+                        
+</select>
+			
 					
 						</td>
 					</tr>
@@ -43,13 +179,15 @@
 					<p id="bot"><input name="submit" type="submit" id="boton" value="Guardar" class="boton"/></p>
                 </form>
             </div>
- 
+        
+
             <div id="pie">LABORATORIOS TOX</div>
         </div> 
     </div>
-<a class='flotante' href='../Laboratorio_V3/menu/menu_Adm.html' ><img src='../Laboratorio_V3/images/boton.png' border="0"/></a>
+<a class='flotante' href='../Laboratorio_V4/menu/menu_Adm.html' ><img src='../Laboratorio_V4/images/boton.png' border="0"/></a>
 </body> 
 </html>
+
 
 <?php
 
@@ -64,9 +202,9 @@ require ("Conexion.php");
 
 
 
-$ClienteIDM = $_POST["ClienteID"];
-$SupervisorID = $_POST["SupervisorID"];
-$FechaEntrega = $_POST["FechaEntrega"];
+$ClienteIDM = $_POST["ClienteIDC"];
+$SupervisorID = $_POST["SupervisorIDC"];
+$FechaEntrega = $_POST["FechaR"];
 $Tipo = $_POST["Tipo"];
 $Repeticion = $_POST["Repeticion"];
 $Centro = $_POST["Centro"];
